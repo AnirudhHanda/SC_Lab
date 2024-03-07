@@ -1,0 +1,144 @@
+Day 7: Preparation for roadmap to become full stack developer
+
+1. Java back-end Development:
+- Spring Framework
+- Spring Microservice
+- System Design
+- Software Architecture
+- Design Patterns
+
+2. DevOps:
+- Writing YAML files
+- Docker
+- Kubernetes
+- Jenkins (CI/CD)
+- Git commands
+- AWS (Amazon Web Services)
+
+3. Frontend:
+- JavaScript
+- HTML
+- CSS
+- React
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Day 8: Preparing for 1CR package.
+
+To become a proficient software developer, it is essential to comprehend software development architecture. This includes understanding:
+
+- The purpose of the architecture.
+- The necessity for employing specific architectures.
+- The reasons behind choosing particular architectural approaches.
+- In-depth conceptual understanding.
+
+These are the Architecture You should know :
+
+1. Monolithic Architecture
+2. Microservices Architecture
+3. Client-Server Architecture
+4. Model-View-Controller (MVC)
+6. Event-Driven Architecture (EDA)
+7. Layered Architecture
+8. P2P (Peer-to-Peer) Architecture
+9. Event Sourcing
+10. Serverless Architecture
+
+Regardless of whether you are a frontend or backend developer, using frameworks such as React or Spring, it is crucial for all developers to be well-versed in these architectural concepts.
+
+Take the time today to learn and understand these architectures, as it is a key factor in achieving success in your endeavors.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+Day 9: Preparing for 1CR package.
+
+On day 9, I have understood all the design patterns for software development and how to write the code. Learn how to design your code and other related concepts today.
+
+1. Creational design pattern
+
+a. Factory method
+b. Abstract factory
+c. Builder
+d. Prototype
+e. Singleton
+
+2. Structural design pattern
+
+a. Adaptor
+b. Bridge
+c. Composite
+d. Decorator
+e. Facade
+f. Flyweight
+g. Proxy
+
+3. Behavioral design pattern
+
+a. Chain of responsibility
+b. Command
+c. Interpreter
+d. Iterator
+e. Mediator
+f. Memento
+g. Observer
+h. State
+i. Strategy
+j. Visitor
+k. Template method.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Day 10/105 of preparing for 1 CR package
+
+Monolithic: Single, tightly integrated application.
+Microservices: Independent, small services that work together through APIs.
+
+Monolithic Application Components:
+- Single codebase
+- Unified database
+- Centralized user interface
+- Shared libraries and resources
+
+Microservices Application Components:
+- Distributed services
+- Isolated databases per service
+- Decentralized user interfaces
+- Independent libraries and resources
+
+Additionally Microservices have
+
+1. Database per Microservice
+2. Event Sourcing
+3. CQRS
+4. Saga
+5. BFF
+6. API Gateway
+7. Strangler
+8. Circuit Breaker
+9. Externalized Configuration
+10. Consumer-Driven Contract Tracing
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Day 11/105: Preparing for 1 CR package
+Day 1/10: Preparing for Spring Framework (Backend Development)
+
+Today, I started learning Spring Framework for backend development. I aim to complete this in the next 10 days.
+
+Started with Spring MVC (Model-View-Controller)
+
+There are four layers in the Spring MVC.
+
+1. Controller Layer:
+- Use: Receives and processes user requests, interacts with the Model layer, and selects the appropriate view to render the response.
+
+2. Service Layer:
+- Use: Contains business logic and acts as an intermediary between the Controller and the Data Access layer, facilitating reusable and modular code.
+
+3. Repository (Data Access) Layer:
+- Use: Manages data persistence and retrieval, interacts with databases or other data sources, providing an abstraction for the underlying storage.
+
+4. Model Layer:
+- Use: Represents the application’s data and business logic, ensuring a clean separation from the presentation and control layers for enhanced maintainability.
