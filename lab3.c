@@ -1,28 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Node{
+typedef struct Node {
     int data;
     struct Node *next;
-}Node;
+} Node;
 
-typedef struct LinkedList{
+typedef struct LinkedList {
     Node *head;
     Node *tail;
     int size;
-}LinkedList;
+} LinkedList;
 
-Node* createNode(int data){
+// Forward declaration of addSorted function
+void addSorted(LinkedList *list, int data);
+
+Node* createNode(int data) {
     Node *newNode = (Node *)malloc(sizeof(Node));
     newNode->data = data;
     newNode->next = NULL;
     return newNode;
 }
 
-void addLast(LinkedList *list, int data){
+void addLast(LinkedList *list, int data) {
     Node *newNode = createNode(data);
     list->size++;
-    if(list->head == NULL){
+    if(list->head == NULL) {
         list->head = list->tail = newNode;
         return;
     }
@@ -31,12 +34,12 @@ void addLast(LinkedList *list, int data){
     list->tail = newNode;
 }
 
-void create(LinkedList *list, int n){
+void create(LinkedList *list, int n) {
     printf("Enter elements: ");
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < n; i++) {
         int data;
         scanf("%d", &data);
-        addSorted(list, data);
+        addSorted(list, data); // Now addSorted is properly declared
     }
 }
 
@@ -47,8 +50,7 @@ void addSorted(LinkedList *list, int data) {
     if(list->head == NULL || list->head->data >= data) {
         newNode->next = list->head;
         list->head = newNode;
-    }
-    else {
+    } else {
         Node *current = list->head;
         while(current->next != NULL && current->next->data < data) {
             current = current->next;
@@ -62,21 +64,23 @@ void addSorted(LinkedList *list, int data) {
     }
 }
 
-void print(LinkedList *list){
+void print(LinkedList *list) {
     Node *ptr = list->head;
-    while(ptr->next != NULL){
+    while(ptr != NULL) {
         printf("%d -> ", ptr->data);
         ptr = ptr->next;
     }
-    printf("%d\n", ptr->data);
+    printf("NULL\n");
 }
 
-LinkedList* createList(){
+LinkedList* createList() {
     LinkedList *list = (LinkedList *)malloc(sizeof(LinkedList));
     list->head = list->tail = NULL;
     list->size = 0;
     return list;
 }
+
+// Rest of your code remains unchanged
 
 LinkedList* unionOperation(LinkedList *setA, LinkedList* setB){
     LinkedList *result = createList();
@@ -249,6 +253,8 @@ int main()
     } else{
         printf("\nAssociativity: FALSE");
     }
+
+    printc("\n");
 
     return 0;
 }
