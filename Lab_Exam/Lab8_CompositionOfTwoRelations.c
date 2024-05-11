@@ -43,7 +43,26 @@ int main() {
         printf("Enter the mv of set3: ");
         scanf("%f", &set3[i].mv);
     }
-
+    printf("\n");
+    // printing sets
+    printf("set1: ");
+    for(int i = 0; i<n; i++){
+        printf("(%c, %.2f)", set1[i].ele, set1[i].mv);
+    }
+    printf("\n");
+    
+    printf("set1: ");
+    for(int i = 0; i<m; i++){
+        printf("(%c, %.2f)", set2[i].ele, set2[i].mv);
+    }
+    printf("\n");
+    
+    printf("set1: ");
+    for(int i = 0; i<p; i++){
+        printf("(%c, %.2f)", set3[i].ele, set3[i].mv);
+    }
+    printf("\n");
+    
     // Compute Cartesian product
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
