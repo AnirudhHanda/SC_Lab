@@ -1,0 +1,1 @@
+printf("%2d  %2d  1  %4d  %8.3f  %7.3f  %7.3f  %7.3f  %8.3f  %6.3f  %6.3f  %6.3f  %6.3f",x1,x2,target,yin,x,DeltaW1,DeltaW2,DeltaBias,w1,w2,bias,x*x);
